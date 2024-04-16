@@ -13,6 +13,9 @@ mongoose
     .then(console.log("connected"))
     .catch((err)=>console.log("mongo error"))
 
+app.use("/" , (req,res)=>{
+    res.send("hello") ; 
+})
 
 
 
